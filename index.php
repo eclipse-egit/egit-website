@@ -30,9 +30,31 @@
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 
+<div id="maincontent">
 	<div id="midcolumn">
-	  This project was just provisioned, so there is nothing here yet. Here is the original <a href="http://www.eclipse.org/proposals/egit/">proposal</a>.
+		<h1>$pageTitle</h1>
+		<p>
+		EGit is an Eclipse Team provider for <a href="http://git-scm.com/">Git</a>.
+		Git is a distributed SCM, which means every developer has a full copy of all
+		history of every revision of the code, making queries against the history
+		very fast and versatile. The EGit project is implementing Eclipse tooling
+		for the JGit Java implementation of Git.
+		</p>
+
+		<div id="rightcolumn">
+			<div class="sideitem">
+				<img src="egit2.png" width="150">
+			</div>
+			<div class="sideitem">
+				<h6>Related links</h6>
+				<ul>
+					<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=technology.egit">Project Summary</a></li>
+					<li><a href="http://www.eclipse.org/proposals/egit/">Project Proposal</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
+</div>
 
 EOHTML;
 
