@@ -40,18 +40,18 @@
 		very fast and versatile. The EGit project is implementing Eclipse tooling
 		for the JGit Java implementation of Git.
 		</p>
+	</div>
 
-		<div id="rightcolumn">
-			<div class="sideitem">
-				<img src="egit2.png" width="150">
-			</div>
-			<div class="sideitem">
-				<h6>Related links</h6>
-				<ul>
-					<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=technology.egit">Project Summary</a></li>
-					<li><a href="http://www.eclipse.org/proposals/egit/">Project Proposal</a></li>
-				</ul>
-			</div>
+	<div id="rightcolumn">
+		<div class="sideitem" style="text-align: center">
+			<img src="egit2.png" width="150">
+		</div>
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul>
+				<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=technology.egit">Project Summary</a></li>
+				<li><a href="http://www.eclipse.org/proposals/egit/">Project Proposal</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
