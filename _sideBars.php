@@ -7,12 +7,5 @@
 		<div class="sideitem" style="text-align: center">
 			<img src="egit2.png" width="150">
 		</div>
-		<div class="sideitem">
-			<h6>Related Links</h6>
-			<ul>
-				<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=technology.egit">Project Summary</a></li>
-				<li><a href="http://www.eclipse.org/proposals/egit/">Project Proposal</a></li>
-			</ul>
-		</div>
 EOHTML;
 ?>
