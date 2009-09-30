@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0"
+      name="EGit"
+      xmlns="http://www.eclipse.org/project/plan"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      >
+   <release projectid="technology.egit" version="0.6"/>
+
+   <introduction>
+     <html:div>
+       The EGit project provides two major technologies:
+       <html:ul>
+         <html:li>
+           JGit, a pure Java implementation of the Git version control system.
+         </html:li>
+         <html:li>
+           EGit, an Eclipse team provider plugin which relies upon JGit to
+           access local and remote Git repositories.
+         </html:li>
+       </html:ul>       
+     </html:div>
+   </introduction>
+
+   <release_deliverables>
+     <html:div>
+       Working team provider plugin.
+     </html:div>
+   </release_deliverables>
+
+   <release_milestones>
+      <milestone date="10/30/2009" milestone="M1">
+        <html:div>
+          The first incubation release of EGit and JGit code from the
+          eclipse.org namespace and eclipse.org the download area.
+        </html:div>
+        <html:div>
+          The primary goals of this release are to fix the outstanding data
+          corruption documented in <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286653">bug 286653</html:a>,
+          and to get the project team familiar with the eclipse.org environment
+          and development process.   
+        </html:div>
+      </milestone>
+      <milestone date="11/30/2009" milestone="M2">
+        <html:div>
+          Polish more of the known bugs in the current code, in an effort to
+          stablize the code base for the 0.6 release.
+        </html:div>      
+      </milestone>
+      <milestone date="1/1/2010" milestone="0.6">
+        <html:div>
+          Final 0.6 release available for download through eclipse.org.
+          Ideally the EGit project would be out of incubation by this
+          point and could make a non-incubation release.
+        </html:div>
+      </milestone>
+   </release_milestones>
+
+   <target_environments>
+     <html:div>
+       For the EGit team provider, any Java 5 or later platform that runs
+       the Eclipse workbench.
+     </html:div>
+     <html:div>
+       For the JGit library, any Java 5 or later standard edition platform,
+       without git-core or any other Eclipse product installed.
+     </html:div>
+     <internationalization>
+       <html:div>
+         Only English translation files in this release, however all strings
+         will be externalized for translation in a future release. 
+       </html:div>
+     </internationalization>
+   </target_environments>
+
+   <compatibility_with_previous_releases>
+       <html:div>
+         None, EGit has had no prior release under the eclipse.org umbrella.
+       </html:div>
+       <html:div>
+         Compatibility with prior releases made under the org.spearce package
+         name will not be considered.  End users must manually uninstall the
+         prior feature, install the new one, and reconnect the team provider.
+       </html:div>
+   </compatibility_with_previous_releases>
+</plan>
