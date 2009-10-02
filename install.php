@@ -21,7 +21,16 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<p>
-		An update site is not yet available.
+		An official update site is not yet available.
+		</p>
+		
+		<h5>Non-Eclipse Snapshot Update Site</h5>
+		<p>
+		Robin Rosenberg maintains an external update site at
+		<a href="http://www.jgit.org/updates/">http://www.jgit.org/updates/</a>
+		hosting periodic snapshots from the development trunk.  These are
+		<b>not official</b> releases and are only made available to help the
+		EGit development team use the plugin to develop itself.
 		</p>
 	</div>
 
