@@ -13,6 +13,8 @@
        <html:ul>
          <html:li>
            JGit, a pure Java implementation of the Git version control system.
+           The JGit component is licensed under the <html:a href="http://www.eclipse.org/org/documents/edl-v10.php">EDL</html:a>
+           and has only BSD licensed dependencies.
          </html:li>
          <html:li>
            EGit, an Eclipse team provider plugin which relies upon JGit to
@@ -39,6 +41,10 @@
           corruption documented in <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286653">bug 286653</html:a>,
           and to get the project team familiar with the eclipse.org environment
           and development process.   
+        </html:div>
+        <html:div>
+          A secondary goal of this release is to integrate the user-sourced
+          wiki documentation as help text, using wikitext.
         </html:div>
       </milestone>
       <milestone date="11/30/2009" milestone="M2">
