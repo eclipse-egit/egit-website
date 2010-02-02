@@ -4,25 +4,32 @@
 	# See the Committer Tools "How Do I" for list of themes
 	# https://dev.eclipse.org/committers/
 	# Optional: defaults to system theme 
-	$theme = "";
+	$theme = "Nova";
+	
 
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
-	$Nav->addNavSeparator("EGit", 	"/egit/");
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Source", "http://egit.eclipse.org/egit.git", "_self", 1);
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Contributor Guide", "http://wiki.eclipse.org/EGit/Contributor_Guide", "_self", 1);
+	$Nav->setLinkList(array());
+	$Nav->addNavSeparator("EGit", 	"/egit");
+	$Nav->addCustomNav("Download", "/EGit/download", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/EGit/documentation", "_blank", 3);
+	$Nav->addCustomNav("Support", "/EGit/support", "_blank", 3);
+	$Nav->addCustomNav("Getting Involved", "/EGit/developers", "_blank", 3);
+	
+	$pageKeywords	= "eclipse, egit, git, vcs";
+	$pageAuthor		= "Chris Aniszczyk";
+	$pageTitle 		= "EGit";
 
-	$Nav->addNavSeparator("Users", "/egit/", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Downloads", "downloads.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Installation", "install.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;FAQ (wiki)", "http://wiki.eclipse.org/index.php/EGit/FAQ", "_self", 1);
-
-  $Nav->addNavSeparator("JGit",   "/jgit/");
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Project", "/jgit/", "_self", 1);
-
-  $Nav->addNavSeparator("About",   "/egit/");
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About This Project", "/projects/project_summary.php?projectid=technology.egit", "_self", 1);
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Project Proposal", "/proposals/egit/", "_self", 1);
-
+	$Menu->setMenuItemList(array());
+	$Menu->addMenuItem("Home", "/EGit", "_self");
+	$Menu->addMenuItem("Download", "/EGit/download", "_self");
+	$Menu->addMenuItem("Documentation", "/EGit/documentation", "_self");
+	$Menu->addMenuItem("Support", "/EGit/support", "_self");
+	$Menu->addMenuItem("Developers", "/EGit/developers", "_self");
+	
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style.css"/>' . "\n\t");
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style2.css"/>' . "\n\t");
+	
+	$App->Promotion = TRUE;
 ?>
