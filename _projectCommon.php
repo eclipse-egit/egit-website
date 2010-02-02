@@ -29,7 +29,7 @@
 	$Menu->addMenuItem("Developers", "/egit/developers", "_self");
 	
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/egit/style.css"/>' . "\n\t");
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/egit/style2.css"/>' . "\n\t");
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style2.css"/>' . "\n\t");
 	
 	$App->Promotion = TRUE;
 ?>
