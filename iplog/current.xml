@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<iplog:iplog name="technology.egit" xmlns:iplog="http://www.eclipse.org/projects/xml/iplog">
+  <iplog:project id="technology.egit" name="EGit" version="0.7.0"/>
+  <iplog:meta key="git-commit" value="8482faf44b571d44bafb314419d127f46a5d2257"/>
+  <iplog:license id="Eclipse Public License v1.0"/>
+
+  <iplog:cq description="JSch Version: 0.1.41 (PB CQ3040)" id="3493" license="New BSD license" state="approved" use="unmodified binary"/>
+  <iplog:cq description="Junit Version: 3.8.2 (ATO CQ299) (using Orbit CQ2206)" id="3589" license="Common Public License 1.0" state="approved"/>
+
+  <iplog:committer active="true" firstName="Chris" hasCommits="true" id="zx" lastName="Aniszczyk"/>
+  <iplog:committer active="true" firstName="Christian" hasCommits="false" id="christian.halstrick" lastName="Halstrick"/>
+  <iplog:committer active="true" firstName="Gunnar" hasCommits="false" id="gunnar" lastName="Wagenknecht"/>
+  <iplog:committer active="true" firstName="Matthias" hasCommits="true" id="msohn" lastName="Sohn"/>
+  <iplog:committer active="true" firstName="Mykola" hasCommits="false" id="mn" lastName="Nikishov"/>
+  <iplog:committer active="true" firstName="Robin" hasCommits="true" id="robinrosenberg" lastName="Rosenberg"/>
+  <iplog:committer active="true" firstName="Shawn" hasCommits="true" id="spearce" lastName="Pearce"/>
+  <iplog:committer active="true" firstName="Stefan" hasCommits="true" id="stefanlay" lastName="Lay"/>
+
+  <iplog:contributor id="alex.blewitt@gmail.com" name="Alex Blewitt">
+    <iplog:bug created="2009-10-06 02:02:50" id="f8a9b17832f9d3048c85bee8b0f3ccb9834c213a" size="+1 line" summary="Removed unnecessary 'Everything is EPL' statements in README" type="A"/>
+    <iplog:bug bug-id="291133" created="2009-10-15 11:47:05" id="7fe41b7e3c0732c8f391a61d5feabfc14d2965ba" size="+131 lines" summary="Add to '.gitignore' action" type="A"/>
+    <iplog:bug created="2009-10-19 01:42:36" id="7f6004ee88ae3a1467155e433be5be8dc65a6d40" size="+66 lines" summary="Remove trailing whitespace across EGit" type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="igor@ifedorenko.com" name="Igor Fedorenko">
+    <iplog:bug created="2009-12-01 11:01:13" id="10564f315f2e755302c24af4064281e2ed0f2711" size="+294 lines" summary="Flipped EGit to manifest-first maven-3/tycho build" type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="vrbanec@schneide.com" name="Mihael Vrbanec">
+    <iplog:bug created="2009-11-25 09:32:28" id="1dd1414a1b2a05c65a160991326e41c320f5591d" size="+1 line" summary="fix &quot;&lt;missing argument&gt;&quot; display in compare editors" type="A"/>
+    <iplog:bug created="2009-12-02 04:41:12" id="1bb0e209f0fc399e4e37e7fc4f3ee2813f4b6771" size="+13 lines" summary="Implement &quot;Compare with Revision&quot; action." type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="mn@mn.com.ua" name="Mykola Nikishov">
+    <iplog:bug bug-id="290788" created="2009-09-29 02:07:05" id="aefd631e3c23edbfca7221a63fa600fb468fe389" size="+1 line" summary="Externalized tooltip for Git index action is wrong" type="A"/>
+    <iplog:bug created="2009-10-02 03:30:42" id="e26119c77739cc8068f35ed333f5b003f910cd8a" size="+3 lines" summary="add jgit feature" type="A"/>
+    <iplog:bug bug-id="291283" created="2009-10-03 16:02:45" id="3c3dcd9eb7e00f6c36897c0e77a8ab699b5240f3" size="+110 lines" summary="Share a single project using Quick Access" type="A"/>
+    <iplog:bug bug-id="291303" created="2009-10-04 14:51:16" id="dcd861db6f364c9c41a2409fd90ad2f91bcd7f54" size="+25 lines" summary="Fix dialog to select Git repository location" type="A"/>
+    <iplog:bug bug-id="292531" created="2009-10-15 06:15:26" id="1edc47ec6ae1abc828077ca59fba3b91963d589b" size="+27 lines" summary="Externalize remaining text strings from plugin.xml" type="A"/>
+    <iplog:bug created="2009-10-15 15:21:50" id="84ea4dd6f71f24ca1aba2999072db3a761e64d89" size="+157 lines" summary="Remove trailing whitespaces when saving file" type="A"/>
+    <iplog:bug created="2009-10-17 21:14:24" id="84b7cb118370462f213b0a58dc92f48cb276b7ca" size="+5 lines" summary="Make a comment which describes a precondition public" type="A"/>
+    <iplog:bug bug-id="291303" created="2009-10-20 06:52:20" id="cb9adcf59464fc49a555516039435c45eb6ccb60" size="+99 lines" summary="ConnectProviderOperation uses git repositories selected by user" type="A"/>
+    <iplog:bug created="2009-10-23 03:40:27" id="00555bf3cbf3c2072b9e31c034f39340c207fe6d" size="+13 lines" summary="Assert there are no other git repositories in a parent directories" type="A"/>
+    <iplog:bug created="2009-10-23 03:58:38" id="c3691f89055db6d6d5d8685621ae2b21acffe8b7" size="+16 lines" summary="Remove a test project from workspace before creation" type="A"/>
+    <iplog:bug bug-id="290676" created="2009-10-23 14:10:09" id="75df95f31fe3d67df9bfc82b5c3b6b789a89a205" size="+1 line" summary="Fix assert for a project in a non-existed git repository" type="A"/>
+    <iplog:bug created="2009-10-23 15:18:04" id="8c839d7ec7b884fba2e2a74321a057a58ea1114c" size="+1 line" summary="Specify explcitly that unit tests should be run in UI thread" type="A"/>
+    <iplog:bug created="2009-11-25 12:50:21" id="0dcbff3a776ea3f8341a7176d3f774032b589616" size="+4 lines" summary="Replace hard-coded remote name with Constants.DEFAULT_REMOTE_NAME" type="A"/>
+    <iplog:bug created="2009-11-26 16:26:37" id="e601f8c347675f76fcbfbf1591bc52b7c511c2e6" size="+2 lines" summary="Access to IDEWorkbenchPlugin is discouraged, use ResourcesPlugin" type="A"/>
+    <iplog:bug created="2009-11-29 13:30:23" id="2c13813e93ca6f091f801b03c451943766f05c86" size="+1 line" summary="Get a suggested directory name to clone to using just introduced URIish.getHumanishName()" type="A"/>
+    <iplog:bug created="2009-12-19 10:42:23" id="3e78b6dd63c5694d07da4e877526afea381acc9f" size="+37 lines" summary="Create an archived update site" type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="remysuen@ca.ibm.com" name="Remy Suen">
+    <iplog:bug created="2009-10-16 15:52:35" id="e2eced2b9eb87c26107f6a629572ebe7eda11b78" size="+1 line" summary="Fix conflicting button mnemonic in clone wizard" type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="skligys@google.com" name="Skirmantas Kligys">
+    <iplog:bug created="2009-10-14 18:35:03" id="efbfafde119eaa2ddd5156e19b1b73485c0f4fa6" size="+21 lines" summary="Fix RepositoryFinder to work with linked folders" type="A"/>
+    <iplog:bug created="2009-12-29 11:57:55" id="9db8b9b656abb444445adfa0217a0fe2788d8d10" size="+3 lines" summary="Quick diff against git head used to fail if the project itself has no mapping." type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="stefan.lay@sap.com" name="Stefan Lay">
+    <iplog:bug created="2009-09-23 05:36:23" id="7c85a3010d482d1ed8cb606adfae93cb26c40f03" size="+217 lines" summary="Add NON-NLS pseudo comment to technical Strings and trace messages" type="A"/>
+    <iplog:bug created="2009-09-25 08:23:57" id="dde9bbaf73075825611601f2f741ec16e68cf08e" size="+2 lines" summary="Fix unexpected CoreException" type="A"/>
+  </iplog:contributor>
+</iplog:iplog>
