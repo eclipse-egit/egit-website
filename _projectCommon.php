@@ -11,22 +11,22 @@
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# these are optional
 	$Nav->setLinkList(array());
-	$Nav->addNavSeparator("EGit", 	"/egit");
-	$Nav->addCustomNav("Download", "/egit/download", "_self", 3);
-	$Nav->addCustomNav("Documentation", "/egit/documentation", "_blank", 3);
-	$Nav->addCustomNav("Support", "/egit/support", "_blank", 3);
-	$Nav->addCustomNav("Getting Involved", "/egit/developers", "_blank", 3);
+	$Nav->addNavSeparator("EGit", 	"/egit/");
+	$Nav->addCustomNav("Download", "/egit/download/", "_self", 3);
+	$Nav->addCustomNav("Documentation", "/egit/documentation/", "_self", 3);
+	$Nav->addCustomNav("Support", "/egit/support/", "_self", 3);
+	$Nav->addCustomNav("Getting Involved", "/egit/developers/", "_self", 3);
 	
 	$pageKeywords	= "eclipse, egit, git, vcs";
 	$pageAuthor		= "Chris Aniszczyk";
 	$pageTitle 		= "EGit";
 
 	$Menu->setMenuItemList(array());
-	$Menu->addMenuItem("Home", "/egit", "_self");
-	$Menu->addMenuItem("Download", "/egit/download", "_self");
-	$Menu->addMenuItem("Documentation", "/egit/documentation", "_self");
-	$Menu->addMenuItem("Support", "/egit/support", "_self");
-	$Menu->addMenuItem("Developers", "/egit/developers", "_self");
+	$Menu->addMenuItem("Home", "/egit/", "_self");
+	$Menu->addMenuItem("Download", "/egit/download/", "_self");
+	$Menu->addMenuItem("Documentation", "/egit/documentation/", "_self");
+	$Menu->addMenuItem("Support", "/egit/support/", "_self");
+	$Menu->addMenuItem("Developers", "/egit/developers/", "_self");
 	
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style.css"/>' . "\n\t");
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style2.css"/>' . "\n\t");
