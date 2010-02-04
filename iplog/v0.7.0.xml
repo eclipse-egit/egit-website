@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <iplog:iplog name="technology.egit" xmlns:iplog="http://www.eclipse.org/projects/xml/iplog">
   <iplog:project id="technology.egit" name="EGit" version="0.7.0"/>
-  <iplog:meta key="git-commit" value="8482faf44b571d44bafb314419d127f46a5d2257"/>
+  <iplog:meta key="git-commit" value="81529aace587c12c39807814f860622533b1a65c"/>
   <iplog:license id="Eclipse Public License v1.0"/>
 
   <iplog:cq description="JSch Version: 0.1.41 (PB CQ3040)" id="3493" license="New BSD license" state="approved" use="unmodified binary"/>
@@ -24,6 +24,7 @@
 
   <iplog:contributor id="igor@ifedorenko.com" name="Igor Fedorenko">
     <iplog:bug created="2009-12-01 11:01:13" id="10564f315f2e755302c24af4064281e2ed0f2711" size="+294 lines" summary="Flipped EGit to manifest-first maven-3/tycho build" type="A"/>
+    <iplog:bug created="2009-12-21 06:36:18" id="617a563f9f1c264b123f8c1d01d7518d1f946799" size="+142 lines" summary="Font and color decoration." type="A"/>
   </iplog:contributor>
 
   <iplog:contributor id="vrbanec@schneide.com" name="Mihael Vrbanec">
@@ -57,10 +58,5 @@
   <iplog:contributor id="skligys@google.com" name="Skirmantas Kligys">
     <iplog:bug created="2009-10-14 18:35:03" id="efbfafde119eaa2ddd5156e19b1b73485c0f4fa6" size="+21 lines" summary="Fix RepositoryFinder to work with linked folders" type="A"/>
     <iplog:bug created="2009-12-29 11:57:55" id="9db8b9b656abb444445adfa0217a0fe2788d8d10" size="+3 lines" summary="Quick diff against git head used to fail if the project itself has no mapping." type="A"/>
-  </iplog:contributor>
-
-  <iplog:contributor id="stefan.lay@sap.com" name="Stefan Lay">
-    <iplog:bug created="2009-09-23 05:36:23" id="7c85a3010d482d1ed8cb606adfae93cb26c40f03" size="+217 lines" summary="Add NON-NLS pseudo comment to technical Strings and trace messages" type="A"/>
-    <iplog:bug created="2009-09-25 08:23:57" id="dde9bbaf73075825611601f2f741ec16e68cf08e" size="+2 lines" summary="Fix unexpected CoreException" type="A"/>
   </iplog:contributor>
 </iplog:iplog>
