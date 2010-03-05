@@ -20,7 +20,7 @@
            EGit, an Eclipse team provider plugin which relies upon JGit to
            access local and remote Git repositories.
          </html:li>
-       </html:ul>       
+       </html:ul>
      </html:div>
    </introduction>
 
@@ -40,7 +40,7 @@
           The primary goals of this release are to fix the outstanding data
           corruption documented in <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286653">bug 286653</html:a>,
           and to get the project team familiar with the eclipse.org environment
-          and development process.   
+          and development process.
         </html:div>
         <html:div>
           A secondary goal of this release is to integrate the user-sourced
@@ -51,13 +51,16 @@
         <html:div>
           Polish more of the known bugs in the current code, in an effort to
           stablize the code base for the 0.6 release.
-        </html:div>      
+        </html:div>
       </milestone>
-      <milestone date="1/1/2010" milestone="0.6">
+      <milestone date="03/17/2010" milestone="0.7">
         <html:div>
-          Final 0.6 release available for download through eclipse.org.
-          Ideally the EGit project would be out of incubation by this
-          point and could make a non-incubation release.
+          First 0.7 release available for download through eclipse.org.
+        </html:div>
+      </milestone>
+      <milestone date="06/24/2010" milestone="0.8">
+        <html:div>
+          0.8 release available with Helios release train.
         </html:div>
       </milestone>
    </release_milestones>
@@ -74,7 +77,7 @@
      <internationalization>
        <html:div>
          Only English translation files in this release, however all strings
-         will be externalized for translation in a future release. 
+         will be externalized for translation in a future release.
        </html:div>
      </internationalization>
    </target_environments>
