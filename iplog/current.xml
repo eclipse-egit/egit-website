@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <iplog:iplog name="technology.egit" xmlns:iplog="http://www.eclipse.org/projects/xml/iplog">
   <iplog:project id="technology.egit" name="EGit" version="0.7.0"/>
-  <iplog:meta key="git-commit" value="81529aace587c12c39807814f860622533b1a65c"/>
+  <iplog:meta key="git-commit" value="374af9a268a289429ae1b0c64e14116cff5d3916"/>
   <iplog:license id="Eclipse Public License v1.0"/>
 
   <iplog:cq description="JSch Version: 0.1.41 (PB CQ3040)" id="3493" license="New BSD license" state="approved" use="unmodified binary"/>
@@ -22,14 +22,30 @@
     <iplog:bug created="2009-10-19 01:42:36" id="7f6004ee88ae3a1467155e433be5be8dc65a6d40" size="+66 lines" summary="Remove trailing whitespace across EGit" type="A"/>
   </iplog:contributor>
 
+  <iplog:contributor id="chwang@redhat.com" name="Charley Wang">
+    <iplog:bug bug-id="297265" created="2010-02-04 14:19:55" id="354453cc5f3840f7d29bf961fc351c0d6bc8556c" size="+3 lines" summary="Stop prompting user to amend previous commit if no previous commits exist" type="A"/>
+  </iplog:contributor>
+
   <iplog:contributor id="igor@ifedorenko.com" name="Igor Fedorenko">
     <iplog:bug created="2009-12-01 11:01:13" id="10564f315f2e755302c24af4064281e2ed0f2711" size="+294 lines" summary="Flipped EGit to manifest-first maven-3/tycho build" type="A"/>
     <iplog:bug created="2009-12-21 06:36:18" id="617a563f9f1c264b123f8c1d01d7518d1f946799" size="+142 lines" summary="Font and color decoration." type="A"/>
   </iplog:contributor>
 
+  <iplog:contributor id="jens.baumgart@sap.com" name="Jens Baumgart">
+    <iplog:bug bug-id="297979" created="2010-02-16 04:57:48" id="12172bcd4b9aa98b423bcfb5eab3940e63e53a97" size="+14 lines" summary="Fix error handling in Add to Version Control action." type="A"/>
+    <iplog:bug created="2010-02-26 05:11:07" id="bb09d6c3e95336d46eed700a2f1ac31e09f40ccd" size="+24 lines" summary="Fix freeze of repository import wizard progress dialog." type="A"/>
+    <iplog:bug created="2010-03-11 02:02:48" id="374af9a268a289429ae1b0c64e14116cff5d3916" size="+230 lines" summary="Implement Team-&gt;Add to Index action" type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="mathias.kinzler@sap.com" name="Mathias Kinzler">
+    <iplog:bug bug-id="304478" created="2010-03-05 05:58:31" id="4d88f03ad6b97e43712a856f08bc6b45f6ac868b" size="+44 lines" summary="&quot;Local file...&quot; button for Repository import" type="A"/>
+    <iplog:bug bug-id="303402" created="2010-03-09 09:29:58" id="25f1acdd2f2176380aaac397f69597e3e26c9f0b" size="+183 lines" summary="Add content proposal to Git Wizards URI field" type="A"/>
+  </iplog:contributor>
+
   <iplog:contributor id="vrbanec@schneide.com" name="Mihael Vrbanec">
     <iplog:bug created="2009-11-25 09:32:28" id="1dd1414a1b2a05c65a160991326e41c320f5591d" size="+1 line" summary="fix &quot;&lt;missing argument&gt;&quot; display in compare editors" type="A"/>
     <iplog:bug created="2009-12-02 04:41:12" id="1bb0e209f0fc399e4e37e7fc4f3ee2813f4b6771" size="+13 lines" summary="Implement &quot;Compare with Revision&quot; action." type="A"/>
+    <iplog:bug created="2010-02-17 04:56:22" id="8e5dd91534d9ff876d380c1c77e74aa543f30e93" size="+178 lines" summary="Implement &quot;Compare with Revision&quot; feature in history view." type="A"/>
   </iplog:contributor>
 
   <iplog:contributor id="mn@mn.com.ua" name="Mykola Nikishov">
@@ -58,5 +74,9 @@
   <iplog:contributor id="skligys@google.com" name="Skirmantas Kligys">
     <iplog:bug created="2009-10-14 18:35:03" id="efbfafde119eaa2ddd5156e19b1b73485c0f4fa6" size="+21 lines" summary="Fix RepositoryFinder to work with linked folders" type="A"/>
     <iplog:bug created="2009-12-29 11:57:55" id="9db8b9b656abb444445adfa0217a0fe2788d8d10" size="+3 lines" summary="Quick diff against git head used to fail if the project itself has no mapping." type="A"/>
+  </iplog:contributor>
+
+  <iplog:contributor id="wim.jongman@gmail.com" name="Wim Jongman">
+    <iplog:bug created="2010-03-03 13:42:18" id="589c30c2e9eb14550cc6063d2a801d2cc9b8bfb5" size="+84 lines" summary="Changed project import page checkboxtable into a filtered tree." type="A"/>
   </iplog:contributor>
 </iplog:iplog>
