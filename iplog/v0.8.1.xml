@@ -3,7 +3,7 @@
   <iplog:project id="technology.egit" name="EGit" version="0.8.1"/>
 
   <iplog:consumes id="technology.jgit" name="JGit" version="0.8.0"/>
-  <iplog:meta key="git-commit" value="e4d10cd6150e2a74e8c966bb129add2554c32d3e"/>
+  <iplog:meta key="git-commit" value="17a39091e77b09d99f8cdfccb6e03dee613db177"/>
 
   <iplog:license id="Eclipse Distribution License v1.0"/>
   <iplog:license id="Eclipse Public License v1.0"/>
@@ -13,7 +13,7 @@
   <iplog:cq description="jsch Version: 0.1.37 (using Orbit CQ2002)" id="3905" license="New BSD license" state="approved" use="unmodified source &amp; binary"/>
 
   <iplog:committer active="true" firstName="Chris" hasCommits="true" id="zx" lastName="Aniszczyk"/>
-  <iplog:committer active="true" firstName="Christian" hasCommits="false" id="christian.halstrick" lastName="Halstrick"/>
+  <iplog:committer active="true" firstName="Christian" hasCommits="true" id="christian.halstrick" lastName="Halstrick"/>
   <iplog:committer active="true" firstName="Gunnar" hasCommits="false" id="gunnar" lastName="Wagenknecht"/>
   <iplog:committer active="true" firstName="Mathias" hasCommits="true" id="mathiaskinzler" lastName="Kinzler"/>
   <iplog:committer active="true" firstName="Matthias" hasCommits="true" id="msohn" lastName="Sohn"/>
@@ -39,6 +39,8 @@
 
   <iplog:contributor id="dariusz@luksza.org" name="Dariusz Luksza">
     <iplog:contribution description="Improved reability of GitProjectData class." id="c3a03ab557517bc1bc3c40797565ba56de0d8aca" size="+10 lines" url="http://egit.eclipse.org/r/r/c3a03ab557517bc1bc3c40797565ba56de0d8aca"/>
+    <iplog:contribution description="Add tagging UI support" id="708aa2d18f58c7a9655045b6fe5d0483fde89e6e" size="+1285 lines" url="http://egit.eclipse.org/r/r/708aa2d18f58c7a9655045b6fe5d0483fde89e6e"/>
+    <iplog:contribution description="Add tag icon for tags in tag list in CrateTagDialog" id="650702404a06f86bce81b1d105ffc70ec429f9cf" size="+12 lines" url="http://egit.eclipse.org/r/r/650702404a06f86bce81b1d105ffc70ec429f9cf"/>
   </iplog:contributor>
 
   <iplog:contributor id="igor@ifedorenko.com" name="Igor Fedorenko">
@@ -65,6 +67,16 @@
     <iplog:contribution description="Improve error handling in EGit UI" id="373162511e9b12060fef0092359835f407441a90" size="+51 lines" url="http://egit.eclipse.org/r/r/373162511e9b12060fef0092359835f407441a90"/>
     <iplog:contribution description="Enable import of empty Git repositories" id="3df7ba98998c99b87ff94e7599bddbf1b951931f" size="+40 lines" url="http://egit.eclipse.org/r/r/3df7ba98998c99b87ff94e7599bddbf1b951931f"/>
     <iplog:contribution description="EGit operation / action refactoring" id="ecbcfec5e7062d87dcc25eea33972c1805aca87f" size="+181 lines" url="http://egit.eclipse.org/r/r/ecbcfec5e7062d87dcc25eea33972c1805aca87f"/>
+    <iplog:contribution description="Execute ResetOperation in Workspace Runnable" id="66c61a03b68b55cea804e7c50da57e3243e3eafc" size="+20 lines" url="http://egit.eclipse.org/r/r/66c61a03b68b55cea804e7c50da57e3243e3eafc"/>
+    <iplog:contribution description="Improve DiscardChangesAction" id="3643937dec912c8da636e659c75b587b2bcd3d19" size="+298 lines" url="http://egit.eclipse.org/r/r/3643937dec912c8da636e659c75b587b2bcd3d19"/>
+    <iplog:contribution description="Replace getWorkbenchWindow().run by using a Job" id="98079a73da8134b142f8da8108bcccfb572815e4" size="+77 lines" url="http://egit.eclipse.org/r/r/98079a73da8134b142f8da8108bcccfb572815e4"/>
+    <iplog:contribution description="Action Reactoring (AbstractOperationAction)" id="127d9e0fcb7cb8c76f6929d1205bf613912874bc" size="+489 lines" url="http://egit.eclipse.org/r/r/127d9e0fcb7cb8c76f6929d1205bf613912874bc"/>
+    <iplog:contribution description="Move UpdateJob to UpdateOperation" id="da5400afbea8ab8d7c1cd687228808ddf5c81506" size="+141 lines" url="http://egit.eclipse.org/r/r/da5400afbea8ab8d7c1cd687228808ddf5c81506"/>
+    <iplog:contribution description="History View: sub menus for reset and quick diff" id="3732f71825b37cd7ecbcc8a7fb6bd9398ef74cbe" size="+34 lines" url="http://egit.eclipse.org/r/r/3732f71825b37cd7ecbcc8a7fb6bd9398ef74cbe"/>
+    <iplog:contribution description="Improve JavaDoc of IEGitOperation" id="4462355dd3a380603618c3e411818a12723eada3" size="+5 lines" url="http://egit.eclipse.org/r/r/4462355dd3a380603618c3e411818a12723eada3"/>
+    <iplog:contribution description="Fix JavaDoc in IEGitOperation" id="8ed98b6d0cd30d8e7b135ddc92650150b446c6d5" size="+3 lines" url="http://egit.eclipse.org/r/r/8ed98b6d0cd30d8e7b135ddc92650150b446c6d5"/>
+    <iplog:contribution description="Fix missing support for monitor == null" id="4242abcccf7e1ad8f8e551847436cc43fc7ff59f" size="+42 lines" url="http://egit.eclipse.org/r/r/4242abcccf7e1ad8f8e551847436cc43fc7ff59f"/>
+    <iplog:contribution description="Extract public class RepositoryCache from GitProjectData" id="506fb7a70eee7f970682e9218d599ea63bd0d88d" size="+77 lines" url="http://egit.eclipse.org/r/r/506fb7a70eee7f970682e9218d599ea63bd0d88d"/>
   </iplog:contributor>
 
   <iplog:contributor id="mathias.kinzler@sap.com" name="Mathias Kinzler">
@@ -141,6 +153,14 @@
     <iplog:contribution description="Fix EGit history handling code to consider IAdaptables" id="e494ea152d0f0663d3004ab5638ff85ac2654671" size="+12 lines" url="http://egit.eclipse.org/r/r/e494ea152d0f0663d3004ab5638ff85ac2654671"/>
     <iplog:contribution description="Fix broken 'Show In' feature for 'Git Repositories' view" id="6460390d3e8f78f795e3b57850eeb1aaaafd7eda" size="+23 lines" url="http://egit.eclipse.org/r/r/6460390d3e8f78f795e3b57850eeb1aaaafd7eda"/>
     <iplog:contribution description="Remove references to internal types in ShareSingleProjectCommand" id="1e92a6cf8211a799a20dd8035a65413b6824eed7" size="+3 lines" url="http://egit.eclipse.org/r/r/1e92a6cf8211a799a20dd8035a65413b6824eed7"/>
+    <iplog:contribution description="Prevent leaking of SWT menus in the 'Git Repositories' view" id="92136a31eca6ef4dbbe330dabefbc696b2104045" size="+5 lines" url="http://egit.eclipse.org/r/r/92136a31eca6ef4dbbe330dabefbc696b2104045"/>
+    <iplog:contribution description="Relax constructor parameters of EGit operations" id="6b6c3ca05a66811b4910267549d1a5b90bd7620a" size="+16 lines" url="http://egit.eclipse.org/r/r/6b6c3ca05a66811b4910267549d1a5b90bd7620a"/>
+    <iplog:contribution description="Ignore secondary mouse clicks in the 'History' view's hyperlinks" id="f82d1a0dbfde2fa2ce5d971773a554ee694ac408" size="+5 lines" url="http://egit.eclipse.org/r/r/f82d1a0dbfde2fa2ce5d971773a554ee694ac408"/>
+    <iplog:contribution description="Precheck selected files in the commit dialog" id="ae6f42aa91329d807e177cdabe05216049ed9d19" size="+59 lines" url="http://egit.eclipse.org/r/r/ae6f42aa91329d807e177cdabe05216049ed9d19"/>
+    <iplog:contribution description="Improve the patch wizard's text and image enhance its presentation" id="df6aff2361256f113da4dbead00d286afec560a0" size="+51 lines" url="http://egit.eclipse.org/r/r/df6aff2361256f113da4dbead00d286afec560a0"/>
+    <iplog:contribution description="'Git' property page does not need 'Default' and 'Apply' buttons" id="2c4ebe3d2196ab28b5f72505f571cc18fd02e098" size="+4 lines" url="http://egit.eclipse.org/r/r/2c4ebe3d2196ab28b5f72505f571cc18fd02e098"/>
+    <iplog:contribution description="Improve error validation in the patch wizard" id="7c48242225178bbd879149e61423a036574f9206" size="+44 lines" url="http://egit.eclipse.org/r/r/7c48242225178bbd879149e61423a036574f9206"/>
+    <iplog:contribution description="Prevent NPE when comparing an untracked file with the index" id="0c47dcbd35cae80f9a54847fbc17f49c2b65f65a" size="+39 lines" url="http://egit.eclipse.org/r/r/0c47dcbd35cae80f9a54847fbc17f49c2b65f65a"/>
   </iplog:contributor>
 
   <iplog:contributor id="rgrunber@redhat.com" name="Roland Grunberg">
@@ -153,6 +173,8 @@
 
   <iplog:contributor id="ryan.schmitt@boeing.com" name="Ryan Schmitt">
     <iplog:contribution description="Removed uninformative comments (mostly auto-generated non-Javadoc comments)" id="fa399997ef16bd27e616400af88c619e34b674ad" size="+3 lines" url="http://egit.eclipse.org/r/r/fa399997ef16bd27e616400af88c619e34b674ad"/>
+    <iplog:contribution description="Refactored GitProjectsImportPage" id="e1b0a72f34ed00da4f66397edd4f044cef477a27" size="+137 lines" url="http://egit.eclipse.org/r/r/e1b0a72f34ed00da4f66397edd4f044cef477a27"/>
+    <iplog:contribution description="Removed checkedItems field from GitProjectsImportPage" id="23e4fb93d940d1c255cd7ee264f2124f6b3d82bf" size="+26 lines" url="http://egit.eclipse.org/r/r/23e4fb93d940d1c255cd7ee264f2124f6b3d82bf"/>
   </iplog:contributor>
 
   <iplog:contributor id="skligys@google.com" name="Skirmantas Kligys">
