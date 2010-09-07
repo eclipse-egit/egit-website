@@ -25,3 +25,7 @@ h7 {
 a strong {
 	text-decoration: underline;
 }
+
+#rightcolumn ul {
+	margin-left: 10px;
+}
