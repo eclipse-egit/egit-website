@@ -108,7 +108,8 @@
        For the EGit 0.9 until 0.12 team provider, Eclipse workbench 3.5.2 or later.
      </html:div>
      <html:div>
-       For EGit 0.11 and later, Eclipse workbench 4.1 with 3.7 compatibility layer.
+       For EGit 0.11 and later, also Eclipse workbench 4.1 (or later) with 3.7 (or later)
+       compatibility layer is planned to be supported.
      </html:div>
      <html:div>
        For the JGit library, any Java 5 or later standard edition platform,
