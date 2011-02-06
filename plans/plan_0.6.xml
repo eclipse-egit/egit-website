@@ -76,12 +76,20 @@
           Planned features: cherry-pick/revert, notes, pull/rebase, recursive merge, rename aware merge, gc/repack
         </html:div>
       </milestone>
-      <milestone date="03/16/2011" milestone="0.11">
+      <milestone date="02/25/2011" milestone="0.11">
         <html:div>
           0.11 release available for download through eclipse.org.
         </html:div>
         <html:div>
-          Planned features: round up to prepare 1.0, Mylyn integration, git.eclipse.org run by jgit
+          Planned features: round up to prepare 1.0, Mylyn integration
+        </html:div>
+      </milestone>
+      <milestone date="04/20/2011" milestone="0.12">
+        <html:div>
+          0.12 release available for download through eclipse.org.
+        </html:div>
+        <html:div>
+          Planned features: refactor and stabilize API, git.eclipse.org run by jgit
         </html:div>
       </milestone>
       <milestone date="06/22/2011" milestone="1.0">
@@ -97,7 +105,10 @@
        the Eclipse workbench.
      </html:div>
      <html:div>
-       For the EGit 0.9 team provider, Eclipse workbench 3.5.2 or later.
+       For the EGit 0.9 until 0.12 team provider, Eclipse workbench 3.5.2 or later.
+     </html:div>
+     <html:div>
+       For EGit 0.11 and later, Eclipse workbench 4.1 with 3.7 compatibility layer.
      </html:div>
      <html:div>
        For the JGit library, any Java 5 or later standard edition platform,
