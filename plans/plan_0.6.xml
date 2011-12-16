@@ -71,11 +71,11 @@
      </internationalization>
    </target_environments>
    <compatibility_with_previous_releases>
-       <html:div><b>API Compatibility:</b>EGit as of now has no public API. JGit 1.3 will be compatible with APIs declared in earlier 1.x releases,
+       <html:div><html:b>API Compatibility:</html:b>EGit as of now has no public API. JGit 1.3 will be compatible with APIs declared in earlier 1.x releases,
        		JGit 2.1 will be compatible with APIs declared in 2.0.</html:div>
-       <html:div><b>Workspace compatibility:</b>Workspaces being used with EGit 1.0 and later should still open and work with later EGit releases.</html:div>
-       <html:div><b>Project compatibility:</b>Projects being used with EGit 1.0 and later should still open and work with later EGit releases.</html:div>
-       <html:div><b>Non-compliant usage of API's:</b> All non-API methods and classes, and certainly everything in a package with "internal" in its name
+       <html:div><html:b>Workspace compatibility:</html:b>Workspaces being used with EGit 1.0 and later should still open and work with later EGit releases.</html:div>
+       <html:div><html:b>Project compatibility:</html:b>Projects being used with EGit 1.0 and later should still open and work with later EGit releases.</html:div>
+       <html:div><html:b>Non-compliant usage of API's:</html:b> All non-API methods and classes, and certainly everything in a package with "internal" in its name
           or x-internal in the bundle manifest entry, are considered implementation details which may vary between operating environment and are subject
           to change without notice. Client plug-ins that directly depend on anything other than what is specified in the JGit API are inherently
           unsupportable and receive no guarantees about compatibility within a single release much less with earlier releases.</html:div>
