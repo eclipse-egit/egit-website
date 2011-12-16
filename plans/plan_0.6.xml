@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
-<plan plan-format="1.0"
-      name="EGit"
-      xmlns="http://www.eclipse.org/project/plan"
-      xmlns:html="http://www.w3.org/1999/xhtml"
-      >
-   <release projectid="technology.egit" version="0.11"/>
-
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
+      name="Project Name">
+   <release projectid="technology.dash" version="1.0"/>
    <introduction>
      <html:div>
        The EGit project provides two major technologies:
@@ -23,82 +19,27 @@
        </html:ul>
      </html:div>
    </introduction>
-
    <release_deliverables>
      <html:div>
-       Working team provider plugin.
+       Working EGit team provider plugin delivered via EGit p2 repository.
+       JGit plain Java libraries delivered via JGit Maven repository, JGit command line application can be downloaded 
+       from JGit Maven repository or from download page as separate archive and JGit OSGi bundles are delivered via the
+       EGit p2 repository.
      </html:div>
    </release_deliverables>
-
    <release_milestones>
-      <milestone date="10/30/2009" milestone="M1">
-        <html:div>
-          The first incubation release of EGit and JGit code from the
-          eclipse.org namespace and eclipse.org the download area.
-        </html:div>
-        <html:div>
-          The primary goals of this release are to fix the outstanding data
-          corruption documented in <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286653">bug 286653</html:a>,
-          and to get the project team familiar with the eclipse.org environment
-          and development process.
-        </html:div>
-        <html:div>
-          A secondary goal of this release is to integrate the user-sourced
-          wiki documentation as help text, using wikitext.
-        </html:div>
-      </milestone>
-      <milestone date="11/30/2009" milestone="M2">
-        <html:div>
-          Polish more of the known bugs in the current code, in an effort to
-          stablize the code base for the 0.6 release.
-        </html:div>
-      </milestone>
-      <milestone date="03/17/2010" milestone="0.7">
-        <html:div>
-          First 0.7 release available for download through eclipse.org.
-        </html:div>
-      </milestone>
-      <milestone date="06/24/2010" milestone="0.8">
-        <html:div>
-          0.8 release available with Helios release train.
-        </html:div>
-      </milestone>
-      <milestone date="09/23/2010" milestone="0.9">
-        <html:div>
-          0.9 release available with Helios SR1 maintenance release.
-        </html:div>
-      </milestone>
-      <milestone date="12/15/2010" milestone="0.10">
-        <html:div>
-          0.10 release available for download through eclipse.org.
-        </html:div>
-        <html:div>
-          Planned features: cherry-pick/revert, notes, pull/rebase, recursive merge, rename aware merge, gc/repack
-        </html:div>
-      </milestone>
-      <milestone date="02/25/2011" milestone="0.11">
-        <html:div>
-          0.11 release available for download through eclipse.org.
-        </html:div>
-        <html:div>
-          Planned features: round up to prepare 1.0, Mylyn integration
-        </html:div>
-      </milestone>
-      <milestone date="04/20/2011" milestone="0.12">
-        <html:div>
-          0.12 release available for download through eclipse.org.
-        </html:div>
-        <html:div>
-          Planned features: refactor and stabilize API, git.eclipse.org run by jgit
-        </html:div>
-      </milestone>
-      <milestone date="06/22/2011" milestone="1.0">
-        <html:div>
-          1.0 release available with Indigo release train. Stable JGit 1.0 API, transition to mature project.
-        </html:div>
-      </milestone>
+      <preamble>
+         <html:div>JGit and EGit aim at publishing releases every 3 months and try to synchronize
+         this schedule with the release train schedule (with new release train releases every June,
+         and with service releases SR1 each September and SR2 each February).</html:div>
+      </preamble>
+      <milestone date="12/21/2011" milestone="1.2.0"><html:div></html:div></milestone>
+      <milestone date="2/15/2012" milestone="1.3.0"><html:div>1.3 available with Indigo SR1,
+         clean and evolve API, gc support, recursive merge support, stash support, submodule support</html:div></milestone>
+      <milestone date="4/2012" milestone="2.0"><html:div>include in all relevant EPP packages</html:div></milestone>
+      <milestone date="6/2012" milestone="2.1"><html:div>available with Juno, ship with SDK by default</html:div></milestone>
+      <postamble><html:div></html:div></postamble>
    </release_milestones>
-
    <target_environments>
      <html:div>
        For the EGit team provider, any Java 5 or later platform that runs
@@ -109,7 +50,14 @@
      </html:div>
      <html:div>
        For EGit 0.11 and later, also Eclipse workbench 4.1 (or later) with 3.7 (or later)
-       compatibility layer is planned to be supported.
+       compatibility layer.
+     </html:div>
+     <html:div>
+		For EGit 1.3 and later, minimum Eclipse workbench version will be 3.6.2.
+     </html:div>
+     <html:div>
+       For EGit 2.1 and later, also Eclipse workbench 4.2 (or later) with 3.8 (or later)
+       compatibility layer will be supported.
      </html:div>
      <html:div>
        For the JGit library, any Java 5 or later standard edition platform,
@@ -117,20 +65,42 @@
      </html:div>
      <internationalization>
        <html:div>
-         Only English translation files in this release, however all strings
-         will be externalized for translation in a future release.
+         Only English translation files, however all strings
+         are externalized for translation in a future release.
        </html:div>
      </internationalization>
    </target_environments>
-
    <compatibility_with_previous_releases>
-       <html:div>
-         None, EGit has had no prior release under the eclipse.org umbrella.
-       </html:div>
-       <html:div>
-         Compatibility with prior releases made under the org.spearce package
-         name will not be considered.  End users must manually uninstall the
-         prior feature, install the new one, and reconnect the team provider.
-       </html:div>
+       <html:div><b>API Compatibility:</b>EGit as of now has no public API. JGit 1.3 will be compatible with APIs declared in earlier 1.x releases,
+       		JGit 2.1 will be compatible with APIs declared in 2.0.</html:div>
+       <html:div><b>Workspace compatibility:</b>Workspaces being used with EGit 1.0 and later should still open and work with later EGit releases.</html:div>
+       <html:div><b>Project compatibility:</b>Projects being used with EGit 1.0 and later should still open and work with later EGit releases.</html:div>
+       <html:div><b>Non-compliant usage of API's:</b> All non-API methods and classes, and certainly everything in a package with "internal" in its name
+          or x-internal in the bundle manifest entry, are considered implementation details which may vary between operating environment and are subject
+          to change without notice. Client plug-ins that directly depend on anything other than what is specified in the JGit API are inherently
+          unsupportable and receive no guarantees about compatibility within a single release much less with earlier releases.</html:div>
    </compatibility_with_previous_releases>
-</plan>
+   <themes_and_priorities>
+     <preamble>
+<!--          <html:div>Some xhtml content here.  Make sure to use the prefix before the elements</html:div> -->
+     </preamble>
+     <theme name="Usability">
+<!--        <description>...(optional) html...</description>
+        <committed bugzilla="...(recommended) bugzilla search url...">
+           ...(optional alternate) html...</committed>
+        <proposed bugzilla="...(recommended) bugzilla search url...">
+           ...(optional alternate) html...</proposed>
+        <deferred bugzilla="...(recommended) bugzilla search url...">
+           ...(optional alternate) html...</deferred> -->
+     </theme>
+     <theme name="Enable use without command-line git">
+     </theme>
+     <theme name="Documentation Improvements">
+     </theme>
+     <theme name="Building a Community">
+     </theme>
+   </themes_and_priorities>
+<!--   <appendix name="Project Refactoring">
+     ...html...
+   </appendix> -->
+ </plan>
