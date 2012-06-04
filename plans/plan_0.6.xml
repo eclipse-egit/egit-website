@@ -56,10 +56,11 @@
        compatibility layer.
      </html:div>
      <html:div>
-		For EGit 1.3 and later, minimum Eclipse workbench version will be 3.6.2.
+		For EGit 1.3 and later, minimum Eclipse workbench version is 3.6.2.
      </html:div>
      <html:div>
-       For EGit 2.1 and later, also Eclipse workbench 4.2 (or later) with 3.8 (or later)
+       For EGit 2.0 and later, minimum Eclipse workbench version will be 3.7.2, 
+       also Eclipse workbench 4.2 (or later) with 3.8 (or later)
        compatibility layer will be supported.
      </html:div>
      <html:div>
