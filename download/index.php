@@ -1,6 +1,6 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 	$pageTitle 		= "EGit - Download";
-	$version		= "4.4.1.201607150455-r";
+	$version		= "4.5.0.201609210915-r";
 
 	$html  = '<div id="midcolumn">';
 	$html .= file_get_contents('_index.html');
