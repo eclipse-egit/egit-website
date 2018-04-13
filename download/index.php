@@ -1,13 +1,27 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-	$pageTitle 		= "EGit - Download";
-	$version		= "4.11.0.201803080745-r";
+<?php
+/**
+ * Copyright (c) 2018 Eclipse Foundation and others.
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * Contributors:
+ *    Christopher Guindon (Eclipse Foundation)
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
 
-	$html  = '<div id="midcolumn">';
-	$html .= file_get_contents('_index.html');
-	$html .= "</div>";
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
 
-	$html = preg_replace('/@VERSION@/', $version, $html);
+$App = new App();
 
-	# Generate the web page
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
-?>
+include ($App->getProjectCommon());
+$Theme->setPageTitle("EGit - Download");
+
+$version = "4.11.0.201803080745-r";
+$html = file_get_contents('_index.html');
+$html = preg_replace('/@VERSION@/', $version, $html);
+$Theme->setHtml($html);
+
+$Theme->generatePage();

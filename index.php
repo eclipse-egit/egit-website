@@ -1,9 +1,55 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-	$pageTitle 		= "EGit";
+<?php
+/**
+ * Copyright (c) 2018 Eclipse Foundation and others.
+ *
+ * This program and the accompanying materials are made
+ * available under the terms of the Eclipse Public License 2.0
+ * which is available at https://www.eclipse.org/legal/epl-2.0/
+ *
+ * Contributors:
+ *    Christopher Guindon (Eclipse Foundation)
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ */
 
-	# Paste your HTML content between the EOHTML markers!
-	$html = file_get_contents('_index.html');
-	
-	# Generate the web page
-	$App->generatePage($theme, $Menu, null, $pageAuthor, $pageKeywords, $pageTitle, $html);
-?>
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+
+$App = new App();
+include ($App->getProjectCommon());
+
+// Remove sidebar on frontpage
+$Theme->setNav(new Nav());
+
+$variables['header_nav']['links'][] = array(
+  'icon' => 'fa-book',
+  'url' => 'documentation',
+  'title' => 'Documentation',
+  'text' => 'Tutorials, Examples, Videos, Reference Documentation'
+);
+
+$variables['header_nav']['links'][] = array(
+  'icon' => 'fa-download',
+  'url' => 'download',
+  'title' => 'Download',
+  'text' => 'Eclipse Distribution, Update Site, Dropins'
+);
+
+$variables['header_nav']['links'][] = array(
+  'icon' => 'fa-users',
+  'url' => 'developers',
+  'title' => 'Getting Involved',
+  'text' => 'Contributor Guide, Mailing Lists, Wiki'
+);
+
+$variables['header_nav']['links'][] = array(
+  'icon' => 'fa-support',
+  'url' => 'support',
+  'title' => 'Support',
+  'text' => 'Contributor Guide, Mailing Lists, Wiki'
+);
+$Theme->setThemeVariables($variables);
+
+$Theme->setHtml(file_get_contents('_index.html'));
+
+$Theme->setExtraHeaders('<style>.header_nav{background: url("images/backgroundMain.png") top left no-repeat;}</style>');
+$Theme->generatePage();
