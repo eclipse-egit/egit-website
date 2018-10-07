@@ -19,7 +19,7 @@ $App = new App();
 include ($App->getProjectCommon());
 $Theme->setPageTitle("EGit - Download");
 
-$version = "5.1.1.201809181055-r";
+$version = "5.1.2.201810061102-r";
 $html = file_get_contents('_index.html');
 $html = preg_replace('/@VERSION@/', $version, $html);
 $Theme->setHtml($html);
